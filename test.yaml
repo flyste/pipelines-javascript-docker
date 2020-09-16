@@ -1,0 +1,25 @@
+trigger:
+- none
+
+pool:
+name: licensing
+demands: agent.name -equals localhost
+
+container:
+image: centos:7
+
+steps:
+- script: |
+echo hello
+cat /etc/centos-release
+export FLYNN_LICENSE_FILE=@localhost
+/__a/externals/lmflex
+/__a/externals/lmflex
+/__a/externals/lmflex
+/__a/externals/lmflex
+/__a/externals/lmflex
+/__a/externals/lmflex
+/__a/externals/lmflex
+/__a/externals/lmflex
+/__a/externals/lmflex
+echo goodbye
